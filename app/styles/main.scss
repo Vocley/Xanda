@@ -1,23 +1,25 @@
 /*FONTS*/
+
 @font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('/fonts/Montserrat-Regular.otf');  
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.otf');
 }
 
 @font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('/fonts/Montserrat-Bold.otf');  
+    font-family: 'Montserrat-Bold';
+    src: url('/fonts/Montserrat-Bold.otf');
 }
 
 @font-face {
-  font-family: 'Montserrat-Light';
-  src: url('/fonts/Montserrat-Light.otf');  
+    font-family: 'Montserrat-Light';
+    src: url('/fonts/Montserrat-Light.otf');
 }
 
 @font-face {
-  font-family: 'Montserrat-Hairline';
-  src: url('/fonts/Montserrat-Hairline.otf');  
+    font-family: 'Montserrat-Hairline';
+    src: url('/fonts/Montserrat-Hairline.otf');
 }
+
 
 /*CSS RESET*/
 
@@ -27,26 +29,33 @@
 }
 
 body {
-    font-size: small;    
+    font-size: small;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
+
+ol,
+ul {
+    list-style: none;
+}
+
 
 /*END OF CSS RESET*/
 
 
 /*PALLETTE*/
 
-$blue: #014FA1;
+$blueText: #024F9D;
 $lightGray: #E3E3E3;
 $servicesBg: #01509F;
 $dotGray: #BBBBBB;
 $footer: #1D1D1B;
 $darkDivider: #C6C6C6;
 $lightDivider: #E2E2E2;
+$lightLine: #E8E8E8;
 $darkerText: #1D1D1D;
 $lighterText: #969694;
 $blueText: #004F9E;
@@ -54,8 +63,11 @@ $arrows: #444442;
 
 /*END OF PALLETTE*/
 
+
+/*GLOBAL CSS*/
+
 body {
-	font-family: Montserrat-Regular, sans-serif;
+    font-family: Montserrat-Hairline, sans-serif;
 }
 
 header,
@@ -65,46 +77,113 @@ footer {
     width: 100%;
 }
 
+.innerContainer {
+    padding: 10%;
+}
+
 .wrapper {
     position: relative;
     text-align: center;
 }
 
+h2 {
+    font-size: 2.5em;
+    font-family: Montserrat-Light, sans-serif;
+    color: $blueText;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: Montserrat-Light, sans-serif;
+    color: $blueText;
+}
+
+
+/*END OF GLOBAL CSS*/
+
 .topHeader {
     display: inline-block;
     top: 0;
     width: 100%;
+    span {
+        font-family: Montserrat-Regular, sans-serif;
+    }
     .leftSide {
         float: left;
-        span {
-
+        ul li {
+            border-right: solid 0.2em $lightDivider;
         }
     }
     .rightSide {
         float: right;
         ul li {
-            display: inline-block;
+            border-left: solid 0.2em $lightDivider;
+            &:first-child {
+                border-left: solid 0.1em $darkDivider;
+            }
         }
+    }
+    ul li {
+        display: inline-block;
+        padding: 1.5em;
     }
 }
 
 .bottomHeader {
     display: inline-block;
     width: 100%;
+    position: relative;
+    margin-bottom: 2em;
     .logo {
         width: 49%;
         float: left;
+        padding-bottom: 1.7em;
     }
     .primaryNavContainer {
         width: 49%;
         float: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
         .primaryNav {
             float: left;
-            .secondaryNav {
+            font-family: Montserrat-Regular, sans-serif;
+            .dropdown {
+                position: relative;
+            }
+            .subNav {
+                padding-top: 1em;
                 display: none;
+                position: absolute;
+                background-color: white;
+                color: $blueText;
+                left: 50%;
+                transform: translateX(-50%);
+                font-family: Montserrat-Light, sans-serif;
+                li {
+                    padding: 1.5em 3em;
+                }
+            }
+            .dropdown:hover .subNav {
+                display: block;
+                a {
+                    white-space: nowrap;
+                    &:hover {
+                        border-bottom: solid 0.3em $blueText;
+                        ;
+                    }
+                }
             }
             ul li {
                 display: inline-block;
+                padding: 2em 3em;
+                a {
+                    padding-bottom: 0.3em;
+                    &:hover {
+                        border-bottom: solid 0.3em black;
+                    }
+                }
             }
         }
     }
@@ -118,12 +197,41 @@ footer {
     background-size: cover;
     text-align: center;
     color: white;
+    h1 {
+        font-family: Montserrat-Bold, sans-serif;
+        font-size: 4.6em;
+        padding-bottom: 0.8em;
+    }
+    p {
+        font-size: 4.6em;
+        padding-bottom: 0.8em;
+    }
+    a {
+        display: inline-block;
+        border: 0.2em white solid;
+        padding: 2em 5em;
+        font-family: Montserrat-Regular, sans-serif;
+        margin: 1em;
+    }
 }
 
 .brands {
+    p {
+        font-size: 1.5em;
+    }
     .brandWindow {
         width: 30%;
         display: inline-block;
+        .brandDesc {
+            padding: 1em;
+            margin: 1em;
+            font-size: 0.6em;
+            border-top: 0.1em solid $lightLine;
+            border-bottom: 0.1em solid $lightLine;
+            span {
+                font-family: Montserrat-Regular, sans-serif;
+            }
+        }
     }
 }
 
@@ -159,13 +267,13 @@ footer {
     background-color: $footer;
     color: white;
     .footerLogo {
-    	display: inline-block;
+        display: inline-block;
         max-width: 20%;
         float: left;
     }
     .footerCenter {
-    	display: inline-block;
-    	max-width: 70%;
+        display: inline-block;
+        max-width: 70%;
         .footerNav {
             li {
                 display: inline-block;
@@ -173,8 +281,8 @@ footer {
         }
     }
     .designBy {
-    	display: inline-block;
+        display: inline-block;
         max-width: 20%;
-        float: right;       
+        float: right;
     }
 }

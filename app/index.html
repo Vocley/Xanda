@@ -22,12 +22,18 @@
     <div class="wrapper">
         <header>
             <div class="topHeader">
-                <div class="leftSide">DIRECT LINE <span><a href="">02012345678S</a></span></div>
+                <div class="leftSide">
+                    <ul>
+                        <li>DIRECT LINE <span><a href="#">02012345678</a></span></li>
+                    </ul>
+                </div>
                 <div class="rightSide">
                     <ul>
                         <li class="login"><a href="#"><span>LOGIN</span></a></li>
                         <li class="checkout"><a href="#">CHECK OUT <span>2 ITEMS</span></a></li>
-                        <li class="searchTop"><a href="#"></a></li>
+                        <li class="searchTop">
+                            <a href="#"></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -39,16 +45,14 @@
                     <nav class="primaryNav">
                         <ul>
                             <li><a href="#">HOME</a></li>
-                            <li><a href="#">BRANDS</a>
-                                <nav class="secondaryNav">
-                                    <ul>
-                                        <li><a href="#">LOGGIA</a></li>
-                                        <li><a href="#">SAN MARCO</a></li>
-                                        <li><a href="#">GIORGIO GRAESAN</a></li>
-                                        <li><a href="#">SAN MARINESE</a></li>
-                                        <li><a href="#">ARREGHINI</a></li>
-                                    </ul>
-                                </nav>
+                            <li class="dropdown"><a href="#">BRANDS</a>
+                                <ul class="subNav">
+                                    <li><a href="#">LOGGIA</a></li>
+                                    <li><a href="#">SAN MARCO</a></li>
+                                    <li><a href="#">GIORGIO GRAESAN</a></li>
+                                    <li><a href="#">SAN MARINESE</a></li>
+                                    <li><a href="#">ARREGHINI</a></li>
+                                </ul>
                             </li>
                             <li><a href="#">PRODUCTS</a></li>
                             <li><a href="#">ABOUT US</a></li>
@@ -59,124 +63,140 @@
             </div>
         </header>
         <section class="banner">
-            <h1>PROVIDING REMARKABLE DECOR</h1>
-            <p>Serving 3358 clients in 15 countries with Venetian and other eco-friendly decorative plasters, metallic finishes, tools and protectors</p>
-            <div>
-                <div class="largeButton">
-                    <a href="#">OUR BRANDS</a>
-                </div>
-                <div class="largeButton">
-                    <a href="#">OUR PRODUCTS</a>
-                </div>
+            <div class="innerContainer">
+                <h1>PROVIDING REMARKABLE DECOR</h1>
+                <p>Serving 3358 clients in 15 countries with Venetian and other eco-friendly decorative plasters, metallic finishes, tools and protectors</p>
+                <a href="#">OUR BRANDS</a>
+                <a href="#">OUR PRODUCTS</a>
             </div>
         </section>
         <section class="brands">
-            <h2 class="blueText">OUR BRANDS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sagittis erat, sed convallis purus.</p>
-            <div class="brandWindow"><img src="/images/brands/Loggia.jpg" alt="Loggia logo">
-                <p>Lorem ipsum <span>Loggla</span> dolor sit amet, duis numquam ex vix.</p>
-                <a class="discover" href="#">DISCOVER</a>
+            <div class="innerContainer">
+                <h2 class="blueText">OUR BRANDS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sagittis erat, sed convallis purus.</p>
+                <div class="brandWindow"><img src="/images/brands/Loggia.jpg" alt="Loggia logo">
+                    <div class="brandDesc">
+                        <p>Lorem ipsum <span>Loggla</span> dolor sit amet, duis numquam ex vix.</p>
+                    </div>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="brandWindow"><img src="/images/brands/SanMarco.jpg" alt="San Marco logo">
+                    <div class="brandDesc">
+                        <p><span>San Marco</span> Lorem ipsum dolor sit amet, duis numquam ex vix.</p>
+                    </div>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="brandWindow"><img src="/images/brands/GiorgioGraesan.jpg" alt="Giorgio Graesan logo">
+                    <div class="brandDesc">
+                        <p>Lorem ipsum dolor sit amet, duis <span>Giorgio Graesan</span> numquam ex vix.</p>
+                    </div>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="brandWindow"><img src="/images/brands/SanMarinese.jpg" alt="San Marinese logo">
+                    <div class="brandDesc">
+                        <p>Lorem ipsum <span>San Marinese</span> dolor sit amet, duis numquam ex vix.</p>
+                    </div>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="brandWindow"><img src="/images/brands/Arreghini.jpg" alt="Arreghini logo">
+                    <div class="brandDesc">
+                        <p><span>Arreghini</span>Lorem ipsum dolor sit amet, duis numquam ex vix.</p>
+                    </div>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <aside class="sideDots"></aside>
+                <footer class="sectionFooter"><a href="#bottomHeader">BACK TO TOP</a></footer>
             </div>
-            <div class="brandWindow"><img src="/images/brands/SanMarco.jpg" alt="San Marco logo">
-                <p><span>San Marco</span> Lorem ipsum dolor sit amet, duis numquam ex vix.</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <div class="brandWindow"><img src="/images/brands/GiorgioGraesan.jpg" alt="Giorgio Graesan logo">
-                <p>Lorem ipsum dolor sit amet, duis <span>Giorgio Graesan</span> numquam ex vix.</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <div class="brandWindow"><img src="/images/brands/SanMarinese.jpg" alt="San Marinese logo">
-                <p>Lorem ipsum <span>San Marinese</span> dolor sit amet, duis numquam ex vix.</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <div class="brandWindow"><img src="/images/brands/Arreghini.jpg" alt="Arreghini logo">
-                <p><span>Arreghini</span>Lorem ipsum dolor sit amet, duis numquam ex vix.</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <aside class="sideDots"></aside>
-            <footer class="sectionFooter"><a href="#bottomHeader">BACK TO TOP</a></footer>
         </section>
         <section class="products">
-            <h2 class="blueText">OUR PRODUCTS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sagittis erat, sed convallis purus.</p>
-            <div class="productWindow"><img src="/images/products/01-Decorative.png" alt="Loggia logo">
-                <h3>DECORATIVE PLASTERS</h3>
-                <p>Stucco, Grassello, Lucide, Marmorino, Travertino and many others...</p>
-                <a class="discover" href="#">DISCOVER</a>
+            <div class="innerContainer">
+                <h2 class="blueText">OUR PRODUCTS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sagittis erat, sed convallis purus.</p>
+                <div class="productWindow"><img src="/images/products/01-Decorative.png" alt="Loggia logo">
+                    <h3>DECORATIVE PLASTERS</h3>
+                    <p>Stucco, Grassello, Lucide, Marmorino, Travertino and many others...</p>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="productWindow"><img src="/images/products/02-Metallic.png" alt="Loggia logo">
+                    <h3>METALLIC FINISHES</h3>
+                    <p>Textured and smooth, Pearlescent, Iridescentm transparent and colour washes...</p>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="productWindow"><img src="/images/products/03-Protectors.png" alt="Loggia logo">
+                    <h3>OTHER PRODUCTS</h3>
+                    <p>Everything from sand paper to masking tape...</p>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="productWindow"><img src="/images/products/04-Tools.png" alt="Loggia logo">
+                    <h3>PROTECTOS</h3>
+                    <p>Waxes, sealers, sealants, resins, nanotech protectors...</p>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="productWindow"><img src="/images/products/05-Preparation.png" alt="Loggia logo">
+                    <h3>SURFACE PREPARATION</h3>
+                    <p>Primers and abse coats...</p>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <div class="productWindow"><img src="/images/products/06-Others.png" alt="Loggia logo">
+                    <h3>TOOLS</h3>
+                    <p>Trowels, spatulas, rollers and many others...</p>
+                    <a class="discover" href="#">DISCOVER</a>
+                </div>
+                <aside class="search">
+                </aside>
+                <aside class="sideDots"></aside>
+                <footer class="sectionFooter"><a href="#bottomHeader">BACK TO TOP</a></footer>
             </div>
-            <div class="productWindow"><img src="/images/products/02-Metallic.png" alt="Loggia logo">
-                <h3>METALLIC FINISHES</h3>
-                <p>Textured and smooth, Pearlescent, Iridescentm transparent and colour washes...</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <div class="productWindow"><img src="/images/products/03-Protectors.png" alt="Loggia logo">
-                <h3>OTHER PRODUCTS</h3>
-                <p>Everything from sand paper to masking tape...</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <div class="productWindow"><img src="/images/products/04-Tools.png" alt="Loggia logo">
-                <h3>PROTECTOS</h3>
-                <p>Waxes, sealers, sealants, resins, nanotech protectors...</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <div class="productWindow"><img src="/images/products/05-Preparation.png" alt="Loggia logo">
-                <h3>SURFACE PREPARATION</h3>
-                <p>Primers and abse coats...</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <div class="productWindow"><img src="/images/products/06-Others.png" alt="Loggia logo">
-                <h3>TOOLS</h3>
-                <p>Trowels, spatulas, rollers and many others...</p>
-                <a class="discover" href="#">DISCOVER</a>
-            </div>
-            <aside class="search">
-            </aside>
-            <aside class="sideDots"></aside>
-            <footer class="sectionFooter"><a href="#bottomHeader">BACK TO TOP</a></footer>
         </section>
         <section class="bottom">
-            <article class="services">
-                <img src="/images/Logo-Impera-Header.png" alt="Logo Impera Header">
-                <img src="/images/MapAndCircles.png" alt="World Map">
-                <h5>COMPANY SERVICES</h5>
-                <div class="whiteLine"></div>
-                <p>Established with the goal of providing high-quality, original decoration of the most well-known Italian manufactures all over the world</p>
-                <div class="dots"></div>
-            </article>
-            <article class="favourites">
-                <div class="favCard">
-                    <img src="/images/favourites/Favourites-001.jpg" alt="Favourite number 1">
-                    <a href="#" class="favDetails">More details</a>
-                </div>
-                <div class="favDesc">
-                    <h5>CUSTOMER FAVOURITES</h5>
-                    <div class="blackLine"></div>
-                    <div>STUCCO LUCIDO</div>
+            <div class="innerContainer">
+                <article class="services">
+                    <img src="/images/Logo-Impera-Header.png" alt="Logo Impera Header">
+                    <img src="/images/MapAndCircles.png" alt="World Map">
+                    <h5>COMPANY SERVICES</h5>
+                    <div class="whiteLine"></div>
+                    <p>Established with the goal of providing high-quality, original decoration of the most well-known Italian manufactures all over the world</p>
                     <div class="dots"></div>
-                    <div>ALSO KNOWS AS: VENETIAN PLASTER, SPATULA STUHHI, STUCCO VENEZIANO</div>
-                    <p>Contemporary plasters with polished cement and concrete look, matt and satine plasters, textured and smooth metallic finishes with iridescence, pearlescence, glitter in gloss, satine and matt and many others</p>
-                </div>
-            </article>
-            <aside class="sideDots"></aside>
-            <footer class="sectionFooter"><a href="#bottomHeader">BACK TO TOP</a></footer>
+                </article>
+                <article class="favourites">
+                    <div class="favCard">
+                        <img src="/images/favourites/Favourites-001.jpg" alt="Favourite number 1">
+                        <a href="#" class="favDetails">More details</a>
+                    </div>
+                    <div class="favDesc">
+                        <h5>CUSTOMER FAVOURITES</h5>
+                        <div class="blackLine"></div>
+                        <div>STUCCO LUCIDO</div>
+                        <div class="dots"></div>
+                        <div>ALSO KNOWS AS: VENETIAN PLASTER, SPATULA STUHHI, STUCCO VENEZIANO</div>
+                        <p>Contemporary plasters with polished cement and concrete look, matt and satine plasters, textured and smooth metallic finishes with iridescence, pearlescence, glitter in gloss, satine and matt and many others</p>
+                    </div>
+                </article>
+                <aside class="sideDots"></aside>
+                <footer class="sectionFooter"><a href="#bottomHeader">BACK TO TOP</a></footer>
+            </div>
         </section>
         <aside class="social">GET IN TOUCH
         </aside>
         <footer class="mainFooter">
-            <img class="footerLogo" src="/images/Logo-Impera-Footer.svg" alt="Logo Impera Header">
-            <div class="footerCenter">
-                <nav class="footerNav">
-                    <ul>
-                        <li><a href="#">SEARCH</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">PRIVACY POLICY</a></li>
-                        <li><a href="#">TERMS AND CONDITIONS</a></li>
-                        <li><a href="#">RETURN POLICY</a></li>
-                    </ul>
-                </nav>
-                <p>Copyright &copy; 2015 Impera Italian Finishes, London</p>
+            <div class="innerContainer">
+                <img class="footerLogo" src="/images/Logo-Impera-Footer.svg" alt="Logo Impera Header">
+                <div class="footerCenter">
+                    <nav class="footerNav">
+                        <ul>
+                            <li><a href="#">SEARCH</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">PRIVACY POLICY</a></li>
+                            <li><a href="#">TERMS AND CONDITIONS</a></li>
+                            <li><a href="#">RETURN POLICY</a></li>
+                        </ul>
+                    </nav>
+                    <p>Copyright &copy; 2015 Impera Italian Finishes, London</p>
+                </div>
+                <p class="designBy">Web Design by
+                    <a href="#"><img src="/images/Logo-Xanda-Footer.svg" alt="Xanda logo"></a>
+                </p>
             </div>
-            <p class="designBy">Web Design by <a href="#"><img src="/images/Logo-Xanda-Footer.svg" alt="Xanda logo"></a></p>
         </footer>
     </div>
     <!-- build:js scripts/vendor.js -->
