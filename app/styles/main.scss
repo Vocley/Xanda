@@ -1,501 +1,568 @@
-/*FONTS*/
-
-@font-face {
-    font-family: 'Montserrat-Regular';
-    src: url('/fonts/Montserrat-Regular.otf');
-}
-
-@font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('/fonts/Montserrat-Bold.otf');
-}
-
-@font-face {
-    font-family: 'Montserrat-Light';
-    src: url('/fonts/Montserrat-Light.otf');
-}
-
-@font-face {
-    font-family: 'Montserrat-Hairline';
-    src: url('/fonts/Montserrat-Hairline.otf');
-}
-
-
-/*CSS RESET*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-size: small;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-
-/*END OF CSS RESET*/
-
-
-/*PALLETTE*/
-
-$blueText: #024F9D;
-$lightGray: #E3E3E3;
-$servicesBg: #01509F;
-$dotGray: #BBBBBB;
-$footer: #1D1D1B;
-$darkDivider: #C6C6C6;
-$lightDivider: #E2E2E2;
-$lightLine: #E8E8E8;
-$darkerText: #1D1D1D;
-$lighterText: #969694;
-$blueText: #004F9E;
-$arrows: #444442;
-$grayLine: #C8C8C8;
-
-/*END OF PALLETTE*/
-
-
-/*GLOBAL CSS*/
-
-body {
-    font-family: Montserrat-Hairline, sans-serif;
-}
-
-header,
-section,
-footer {
-    display: inline-block;
-    width: 100%;
-}
-
-.innerContainerBanner {
-    padding: 10%;
-}
-
-.innerContainer {
-    padding: 5%;
-}
-
-.wrapper {
-    position: relative;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2.5em;
-    font-family: Montserrat-Light, sans-serif;
-    color: $blueText;
-    padding-bottom: 0.5em;
-}
-
-h3 {
-    font-size: 2em;
-    font-family: Montserrat-Light, sans-serif;
-    color: $blueText;
-}
-
-.discover {
-    border: black solid 0.2em;
-    padding: 1em;
-    font-family: Montserrat-Regular, sans-serif;
-    font-size: 0.9em;
-    margin: 0 auto;
-    width: 50%;
-    &:hover {
-        color: white;
-        background-color: black;
-        border: black solid 0.2em;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/*END OF GLOBAL CSS*/
-
-.topHeader {
-    display: inline-block;
-    top: 0;
-    width: 100%;
-    white-space: nowrap;
-    span {
-        font-family: Montserrat-Regular, sans-serif;
-    }
-    .leftSide {
-        width: 49%;
-        display: inline-block;
-        text-align: left;
-        .call {
-            border-right: solid 0.2em $lightDivider;
+        /*FONTS*/
+        
+        @font-face {
+            font-family: 'Montserrat-Regular';
+            src: url('/fonts/Montserrat-Regular.otf');
+        }
+        
+        @font-face {
+            font-family: 'Montserrat-Bold';
+            src: url('/fonts/Montserrat-Bold.otf');
+        }
+        
+        @font-face {
+            font-family: 'Montserrat-Light';
+            src: url('/fonts/Montserrat-Light.otf');
+        }
+        
+        @font-face {
+            font-family: 'Montserrat-Hairline';
+            src: url('/fonts/Montserrat-Hairline.otf');
+        }
+        /*CSS RESET*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-size: small;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        /*END OF CSS RESET*/
+        /*PALLETTE*/
+        
+        $blueText: #024F9D;
+        $lightGray: #E3E3E3;
+        $servicesBg: #01509F;
+        $dotGray: #BBBBBB;
+        $footer: #1D1D1B;
+        $darkDivider: #C6C6C6;
+        $lightDivider: #E2E2E2;
+        $lightLine: #E8E8E8;
+        $darkerText: #1D1D1D;
+        $lighterText: #969694;
+        $blueText: #004F9E;
+        $arrows: #444442;
+        $grayLine: #C8C8C8;
+        /*END OF PALLETTE*/
+        /*GLOBAL CSS*/
+        
+        body {
+            font-family: Montserrat-Hairline, sans-serif;
+        }
+        
+        header,
+        section,
+        footer {
             display: inline-block;
-            padding: 1.5em;
-            img {
-                width: 10%;
-                vertical-align: bottom;
-                padding-right: 0.2em;
-            }
+            width: 100%;
         }
-    }
-    .rightSide {
-        width: 49%;
-        display: inline-block;
-        text-align: right;
-        .login img {
-            width: 25%;
-            vertical-align: bottom;
-            padding-right: 0.5em;
+        
+        .innerContainerBanner {
+            padding: 10%;
         }
-        .checkout img {
-            width: 15%;
-            vertical-align: bottom;
-            padding-right: 0.5em;
+        
+        .innerContainer {
+            padding: 5%;
         }
-        .searchTop img {
-            width: 80%;
+        
+        .wrapper {
+            position: relative;
+            text-align: center;
+            overflow-x: hidden;
         }
-        div {
-            display: inline-block;
-            border-left: solid 0.2em $lightDivider;
-            padding: 1.5em;
-            &:first-child {
-                border-left: solid 0.1em $darkDivider;
-            }
+        
+        h2 {
+            font-size: 2.5em;
+            font-family: Montserrat-Light, sans-serif;
+            color: $blueText;
+            padding-bottom: 0.5em;
         }
-    }
-}
-
-.bottomHeader {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    margin-bottom: 2em;
-    .logo {
-        width: 49%;
-        float: left;
-        padding-bottom: 1.7em;
-    }
-    .primaryNavContainer {
-        width: 49%;
-        float: right;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        .primaryNav {
-            float: left;
-            font-family: Montserrat-Regular, sans-serif;
-            .dropdown {
-                position: relative;
-            }
-            .subNav {
-                padding-top: 1em;
-                display: none;
-                position: absolute;
-                background-color: white;
-                color: $blueText;
-                left: 50%;
-                transform: translateX(-50%);
-                font-family: Montserrat-Light, sans-serif;
-                li {
-                    padding: 1.5em 3em;
-                }
-            }
-            .dropdown:hover .subNav {
-                display: block;
-                a {
-                    white-space: nowrap;
-                    &:hover {
-                        border-bottom: solid 0.3em $blueText;
-                        ;
-                    }
-                }
-            }
-            ul li {
-                display: inline-block;
-                padding: 2em 3em;
-                a {
-                    padding-bottom: 0.3em;
-                    &:hover {
-                        border-bottom: solid 0.3em black;
-                    }
-                }
-            }
+        
+        h3 {
+            font-size: 2em;
+            font-family: Montserrat-Light, sans-serif;
+            color: $blueText;
         }
-    }
-}
-
-.banner {
-    background: url("/images/bg-sample.jpg") no-repeat center center local;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    color: white;
-    h1 {
-        font-family: Montserrat-Bold, sans-serif;
-        font-size: 3.6em;
-        padding-bottom: 0.8em;
-    }
-    p {
-        font-size: 3.6em;
-        padding-bottom: 0.8em;
-    }
-    a {
-        display: inline-block;
-        border: 0.2em white solid;
-        padding: 2em 5em;
-        font-family: Montserrat-Regular, sans-serif;
-        margin: 1em;
-        &:hover {
-            color: black;
-            background-color: white;
+        
+        .discover {
             border: black solid 0.2em;
+            padding: 1em;
+            font-family: Montserrat-Regular, sans-serif;
+            font-size: 0.9em;
+            margin: 0 auto;
+            width: 50%;
+            &:hover {
+                color: white;
+                background-color: black;
+                border: black solid 0.2em;
+            }
         }
-    }
-}
-
-.brands {
-    p {
-        font-size: 1.5em;
-        margin-bottom: 2em;
-    }
-    .brandWindow {
-        padding: 2em 0em;
-        width: 30%;
-        display: inline-block;
-        .brandDesc {
-            padding: 2em;
-            margin: 2em;
-            font-size: 0.6em;
-            border-top: 0.1em solid $lightLine;
-            border-bottom: 0.1em solid $lightLine;
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /*END OF GLOBAL CSS*/
+        /*TOPBAR*/
+        
+        .topHeader {
+            display: inline-block;
+            top: 0;
+            width: 100%;
+            white-space: nowrap;
             span {
                 font-family: Montserrat-Regular, sans-serif;
             }
-        }
-    }
-}
-
-.products {
-    p {
-        font-size: 1.5em;
-        margin-bottom: 1em;
-    }
-    .productWindow {
-        padding: 2em;
-        width: 25%;
-        display: inline-block;
-        h3 {
-            font-size: 1.5em;
-            white-space: nowrap;
-        }
-        p {
-            font-size: 1em;
-            line-height: 1.5em;
-        }
-    }
-}
-
-.bottom {
-    .services {
-        display: inline-block;
-        width: 100%;
-        background-color: $servicesBg;
-        color: white;
-        .innerContainer {
             .leftSide {
                 width: 49%;
                 display: inline-block;
-                vertical-align: top;
-                .serviceText {
-                    width: 50%;
-                    text-align: left;
-                    padding-left: 50%;
+                text-align: left;
+                .call {
+                    border-right: solid 0.2em $lightDivider;
+                    display: inline-block;
+                    padding: 1.5em;
                     img {
-                        display: block;
-                        clear: both;
+                        width: 10%;
+                        vertical-align: bottom;
+                        padding-right: 0.2em;
                     }
-                    h5 {
-                        font-size: 1em;
+                }
+            }
+            .rightSide {
+                width: 49%;
+                display: inline-block;
+                text-align: right;
+                .login img {
+                    width: 25%;
+                    vertical-align: bottom;
+                    padding-right: 0.5em;
+                }
+                .checkout img {
+                    width: 15%;
+                    vertical-align: bottom;
+                    padding-right: 0.5em;
+                }
+                .searchTop img {
+                    width: 80%;
+                }
+                div {
+                    display: inline-block;
+                    border-left: solid 0.2em $lightDivider;
+                    padding: 1.5em;
+                    &:first-child {
+                        border-left: solid 0.1em $darkDivider;
+                    }
+                }
+            }
+        }
+        
+        .bottomHeader {
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            margin-bottom: 2em;
+            .logo {
+                width: 49%;
+                padding-bottom: 1.7em;
+            }
+            .primaryNavContainer {
+                width: 49%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                .primaryNav {
+                    float: left;
+                    font-family: Montserrat-Regular, sans-serif;
+                    .dropdown {
+                        position: relative;
+                    }
+                    .subNav {
+                        padding-top: 1em;
+                        display: none;
+                        position: absolute;
+                        background-color: white;
+                        color: $blueText;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-family: Montserrat-Light, sans-serif;
+                        li {
+                            padding: 1.5em 3em;
+                        }
+                    }
+                    .dropdown:hover .subNav {
                         display: block;
-                        padding-top: 5em;
+                        a {
+                            white-space: nowrap;
+                            &:hover {
+                                border-bottom: solid 0.3em $blueText;
+                                ;
+                            }
+                        }
+                    }
+                    ul li {
+                        display: inline-block;
+                        padding: 2em 3em;
+                        a {
+                            padding-bottom: 0.3em;
+                            &:hover {
+                                border-bottom: solid 0.3em black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /* BANNER */
+        .banner {
+            background: url("/images/bg-sample.jpg") no-repeat center center local;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            h1 {
+                font-family: Montserrat-Bold, sans-serif;
+                font-size: 3.6em;
+                padding-bottom: 0.8em;
+            }
+            p {
+                font-size: 3.6em;
+                padding-bottom: 0.8em;
+            }
+            a {
+                display: inline-block;
+                border: 0.2em white solid;
+                padding: 2em 5em;
+                font-family: Montserrat-Regular, sans-serif;
+                margin: 1em;
+                &:hover {
+                    color: black;
+                    background-color: white;
+                    border: black solid 0.2em;
+                }
+            }
+        }
+        
+        .brands {
+            p {
+                font-size: 1.5em;
+                margin-bottom: 2em;
+            }
+            .brandWindow {
+                padding: 2em 0em;
+                width: 30%;
+                display: inline-block;
+                .brandDesc {
+                    padding: 2em;
+                    margin: 2em;
+                    font-size: 0.6em;
+                    border-top: 0.1em solid $lightLine;
+                    border-bottom: 0.1em solid $lightLine;
+                    span {
                         font-family: Montserrat-Regular, sans-serif;
                     }
-                    .whiteLine {
+                }
+            }
+        }
+        
+        /*PRODUCTS*/
+        .products {
+            p {
+                font-size: 1.5em;
+                margin-bottom: 1em;
+            }
+            .productWindow {
+                padding: 2em;
+                width: 25%;
+                display: inline-block;
+                h3 {
+                    font-size: 1.5em;
+                    white-space: nowrap;
+                }
+                p {
+                    font-size: 1em;
+                    line-height: 1.5em;
+                }
+            }
+        }
+        
+        .bottom {
+            .services {
+                display: inline-block;
+                width: 100%;
+                background-color: $servicesBg;
+                color: white;
+                .innerContainer {
+                    .leftSide {
+                        width: 49%;
+                        display: inline-block;
+                        vertical-align: top;
+                        .serviceText {
+                            width: 50%;
+                            text-align: left;
+                            padding-left: 50%;
+                            img {
+                                display: block;
+                                clear: both;
+                            }
+                            h5 {
+                                font-size: 1em;
+                                display: block;
+                                padding-top: 5em;
+                                font-family: Montserrat-Regular, sans-serif;
+                            }
+                            .whiteLine {
+                                display: block;
+                                background-color: white;
+                                width: 2em;
+                                height: 0.5em;
+                                margin-top: 2em;
+                                margin-bottom: 2em;
+                            }
+                            p {
+                                display: block;
+                                text-align: left;
+                                font-size: 1.8em;
+                            }
+                        }
+                    }
+                    .rightSide {
+                        display: inline-block;
+                        width: 49%;
+                    }
+                }
+            }
+
+            /*FAVOURITES*/
+
+            .favourites {
+                display: inline-block;
+                width: 100%;
+                .innerContainer {
+                    position: relative;
+                }
+                .favCard {
+                    width: 25%;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding-top: 10%;
+                    .imgContainer {
+                        margin-bottom: 3em;
                         display: block;
-                        background-color: white;
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+                    a {
+                        display: block;
+                        border: black solid 0.3em;
+                        padding: 0.5em;
+                        font-family: Montserrat-Bold, sans-serif;
+                        font-size: 1em;
+                        margin: 0 auto;
+                        width: 50%;
+                        &:hover {
+                            color: white;
+                            background-color: black;
+                            border: black solid 0.3em;
+                        }
+                    }
+                }
+                .customerFav {
+                    display: inline-block;
+                    width: 49%;
+                    text-align: left;
+                    h5 {
+                        font-size: 1.1em;
+                        display: block;
+                        font-family: Montserrat-Regular, sans-serif;
+                    }
+                    .blackLine {
+                        display: block;
+                        background-color: black;
                         width: 2em;
                         height: 0.5em;
                         margin-top: 2em;
                         margin-bottom: 2em;
                     }
-                    p {
+                    h4 {
+                        font-size: 1.3em;
                         display: block;
-                        text-align: left;
-                        font-size: 1.8em;
+                        font-family: Montserrat-Regular, sans-serif;
+                    }
+                    span {
+                        font-size: 0.6em;
+                        display: block;
+                        padding: 3em 0em;
+                        white-space: nowrap;
+                    }
+                    p {
+                        font-size: 1.7em;
+                        display: block;
+                    }
+                }
+                .favDesc {
+                    width: 90%;
+                    position: absolute;
+                    top: 38%;
+                    z-index: -1;
+                    border-top: solid 1px $grayLine;
+                    border-bottom: solid 1px $grayLine;
+                    padding-top: 3em;
+                }
+            }
+        }
+        
+        /*SOCIAL*/
+
+        .social {
+            text-align: center;
+            width: 100%;
+            font-size: 1.5em;
+            display: block;
+            font-family: Montserrat-Regular, sans-serif;
+            padding: 2em 0em;
+            span {
+                padding-right: 1em;
+            }
+            img {
+                display: inline-block;
+                vertical-align: bottom;
+                padding-right: 0.3em;
+                cursor: pointer;
+            }
+        }
+        
+        /*SCROLL TO THE TOP*/
+        .toTheTop {
+            width: 10%;
+            float: right;
+            font-family: Montserrat-Regular, sans-serif;
+            font-size: 0.8em;
+            border-left: solid 0.2em $lightDivider;
+            padding: 1em 0;
+            img,
+            a {
+                display: inline-block;
+            }
+            img {
+                padding: 0 16%;
+                width: 10%;
+            }
+        }
+        
+        /*FOOTER*/
+        .mainFooter {
+            text-align: center;
+            background-color: $footer;
+            color: white;
+            .innerContainer {
+                padding: 5% 0%;
+            }
+            .footerLogo {
+                display: inline-block;
+                width: 15%;
+                padding-right: 2.5%;
+            }
+            .footerCenter {
+                display: inline-block;
+                width: 50%;
+                .footerNav {
+                    padding: 1em;
+                    white-space: nowrap;
+                    li {
+                        display: inline-block;
+                        font-family: Montserrat-Regular, sans-serif;
+                        padding: 0.4em;
                     }
                 }
             }
-            .rightSide {
+            .designBy {
                 display: inline-block;
-                width: 49%;
+                width: 15%;
+                padding-left: 2.5%;
             }
         }
-    }
-    .favourites {
-        display: inline-block;
-        width: 100%;
-        .innerContainer {
-            position: relative;
-        }
-        .favCard {
-            width: 25%;
-            display: inline-block;
-            vertical-align: top;
-            padding-top: 10%;
-            .imgContainer {
-                margin-bottom: 3em;
-                display: block;
-                img {
-                    margin: 0 auto;
-                }
+        
+        /*MEDIA QUERIES*/
+        @media screen and (max-width: 875px) {
+            .bottomHeader .logo {
+                width: 100%;
+                padding: 0;
+                margin: 0;
             }
-            a {
-                display: block;
-                border: black solid 0.3em;
-                padding: 0.5em;
-                font-family: Montserrat-Bold, sans-serif;
-                font-size: 1em;
-                margin: 0 auto;
-                width: 50%;
-                &:hover {
-                    color: white;
-                    background-color: black;
-                    border: black solid 0.3em;
-                }
+            .bottomHeader .primaryNavContainer {
+                width: 100%;
+                position: static;
+                padding: 0;
+                margin: 0;
+            }
+            .bottom .favourites .favDesc {
+                display: none;
+            }
+            .bottom .favourites .customerFav span {
+                white-space: normal;
+            }
+            .mainFooter .footerCenter {
+                width: 100%;
             }
         }
-        .customerFav {
-            display: inline-block;
-            width: 49%;
-            text-align: left;
-            h5 {
-                font-size: 1.1em;
-                display: block;
-                font-family: Montserrat-Regular, sans-serif;
+        
+        @media screen and (max-width: 810px) {
+            .products .productWindow,
+            .brands .brandWindow {
+                width: 40%;
             }
-            .blackLine {
-                display: block;
-                background-color: black;
-                width: 2em;
-                height: 0.5em;
-                margin-top: 2em;
-                margin-bottom: 2em;
+            .banner h1,
+            .banner p {
+                font-size: 2.6em;
             }
-            h4 {
-                font-size: 1.3em;
-                display: block;
-                font-family: Montserrat-Regular, sans-serif;
+            .bottom .services .innerContainer .leftSide .serviceText p {
+                font-size: 1.2em;
             }
-            span {
-                font-size: 0.6em;
-                display: block;
-                padding: 3em 0em;
-                white-space: nowrap;
+            .bottom .services .innerContainer .leftSide,
+            .bottom .services .innerContainer .rightSide {
+                width: 80%;
             }
-            p {
-                font-size: 1.7em;
-                display: block;
+            .bottom .services .innerContainer .leftSide .serviceText {
+                width: 100%;
+                text-align: center;
+                padding-left: 0;
             }
-        }
-        .favDesc {
-            width: 90%;
-            position: absolute;
-            top: 38%;
-            z-index: -1;
-            border-top: solid 1px $grayLine;
-            border-bottom: solid 1px $grayLine;
-            padding-top: 3em;
-        }
-    }
-}
-
-.social {
-    text-align: center;
-    width: 100%;
-    font-size: 1.5em;
-    display: block;
-    font-family: Montserrat-Regular, sans-serif;
-    padding: 2em 0em;
-    span {
-        padding-right: 1em;
-    }
-    img {
-        display: inline-block;
-        vertical-align: bottom;
-        padding-right: 0.3em;
-        cursor: pointer;
-    }
-}
-
-.toTheTop {
-    width: 10%;
-    float: right;
-    font-family: Montserrat-Regular, sans-serif;
-    font-size: 0.8em;
-    border-left: solid 0.2em $lightDivider;
-    padding: 1em 0;
-    img,
-    a {
-        display: inline-block;
-    }
-    img {
-        padding: 0 16%;
-        width: 10%;
-    }
-}
-
-.mainFooter {
-    text-align: center;
-    background-color: $footer;
-    color: white;
-    .innerContainer {
-        padding: 5% 0%;
-    }
-    .footerLogo {
-        display: inline-block;
-        width: 15%;
-        padding-right: 2.5%;
-    }
-    .footerCenter {
-        display: inline-block;
-        width: 50%;
-        .footerNav {
-            padding: 1em;
-            white-space: nowrap;
-            li {
+            .bottom .services .innerContainer .leftSide .serviceText img {
                 display: inline-block;
-                font-family: Montserrat-Regular, sans-serif;
-                padding: 0.4em;
             }
         }
-    }
-    .designBy {
-        display: inline-block;
-        width: 15%;
-        padding-left: 2.5%;
-    }
-}
+        
+        @media screen and (max-width: 700px) {
+            .topHeader .leftSide,
+            .topHeader .rightSide {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+            .topHeader .leftSide .call,
+            .topHeader .rightSide div:first-child,
+            .topHeader .rightSide div {
+                border: none;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .mainFooter .footerCenter .footerNav {
+                white-space: normal;
+            }
+        }
