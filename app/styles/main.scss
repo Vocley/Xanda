@@ -1,0 +1,180 @@
+/*FONTS*/
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('/fonts/Montserrat-Regular.otf');  
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('/fonts/Montserrat-Bold.otf');  
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('/fonts/Montserrat-Light.otf');  
+}
+
+@font-face {
+  font-family: 'Montserrat-Hairline';
+  src: url('/fonts/Montserrat-Hairline.otf');  
+}
+
+/*CSS RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: small;    
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*END OF CSS RESET*/
+
+
+/*PALLETTE*/
+
+$blue: #014FA1;
+$lightGray: #E3E3E3;
+$servicesBg: #01509F;
+$dotGray: #BBBBBB;
+$footer: #1D1D1B;
+$darkDivider: #C6C6C6;
+$lightDivider: #E2E2E2;
+$darkerText: #1D1D1D;
+$lighterText: #969694;
+$blueText: #004F9E;
+$arrows: #444442;
+
+/*END OF PALLETTE*/
+
+body {
+	font-family: Montserrat-Regular, sans-serif;
+}
+
+header,
+section,
+footer {
+    display: inline-block;
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.topHeader {
+    display: inline-block;
+    top: 0;
+    width: 100%;
+    .leftSide {
+        float: left;
+        span {
+
+        }
+    }
+    .rightSide {
+        float: right;
+        ul li {
+            display: inline-block;
+        }
+    }
+}
+
+.bottomHeader {
+    display: inline-block;
+    width: 100%;
+    .logo {
+        width: 49%;
+        float: left;
+    }
+    .primaryNavContainer {
+        width: 49%;
+        float: right;
+        .primaryNav {
+            float: left;
+            .secondaryNav {
+                display: none;
+            }
+            ul li {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.banner {
+    background: url("/images/bg-sample.jpg") no-repeat center center local;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.brands {
+    .brandWindow {
+        width: 30%;
+        display: inline-block;
+    }
+}
+
+.products {
+    .productWindow {
+        width: 30%;
+        display: inline-block;
+    }
+}
+
+.bottom {
+    .services {
+        display: inline-block;
+        width: 100%;
+        background-color: $servicesBg;
+    }
+    .favourites {
+        display: inline-block;
+        width: 100%;
+        .favCard {
+            width: 20%;
+            float: left;
+        }
+        .favDesc {
+            width: 60%;
+            float: right;
+        }
+    }
+}
+
+.mainFooter {
+    text-align: center;
+    background-color: $footer;
+    color: white;
+    .footerLogo {
+    	display: inline-block;
+        max-width: 20%;
+        float: left;
+    }
+    .footerCenter {
+    	display: inline-block;
+    	max-width: 70%;
+        .footerNav {
+            li {
+                display: inline-block;
+            }
+        }
+    }
+    .designBy {
+    	display: inline-block;
+        max-width: 20%;
+        float: right;       
+    }
+}
