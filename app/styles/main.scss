@@ -60,6 +60,7 @@ $darkerText: #1D1D1D;
 $lighterText: #969694;
 $blueText: #004F9E;
 $arrows: #444442;
+$grayLine: #C8C8C8;
 
 /*END OF PALLETTE*/
 
@@ -73,12 +74,17 @@ body {
 header,
 section,
 footer {
+    position: relative;
     display: inline-block;
     width: 100%;
 }
 
-.innerContainer {
+.innerContainerBanner {
     padding: 10%;
+}
+
+.innerContainer {
+    padding: 5%;
 }
 
 .wrapper {
@@ -99,6 +105,33 @@ h3 {
     color: $blueText;
 }
 
+.discover {
+    border: black solid 0.2em;
+    padding: 1em;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 0.9em;
+    margin: 0 auto;
+    width: 50%;
+    &:hover {
+        color: white;
+        background-color: black;
+        border: black solid 0.2em;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sectionFooter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
 
 /*END OF GLOBAL CSS*/
 
@@ -110,13 +143,11 @@ h3 {
         font-family: Montserrat-Regular, sans-serif;
     }
     .leftSide {
-        float: left;
         ul li {
             border-right: solid 0.2em $lightDivider;
         }
     }
     .rightSide {
-        float: right;
         ul li {
             border-left: solid 0.2em $lightDivider;
             &:first-child {
@@ -218,13 +249,15 @@ h3 {
 .brands {
     p {
         font-size: 1.5em;
+        margin-bottom: 2em;
     }
     .brandWindow {
+        padding: 2em 0em;
         width: 30%;
         display: inline-block;
         .brandDesc {
-            padding: 1em;
-            margin: 1em;
+            padding: 2em;
+            margin: 2em;
             font-size: 0.6em;
             border-top: 0.1em solid $lightLine;
             border-bottom: 0.1em solid $lightLine;
@@ -236,9 +269,22 @@ h3 {
 }
 
 .products {
+    p {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
     .productWindow {
-        width: 30%;
+        padding: 2em;
+        width: 25%;
         display: inline-block;
+        h3 {
+            font-size: 1.5em;
+            white-space: nowrap;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
     }
 }
 
@@ -247,17 +293,117 @@ h3 {
         display: inline-block;
         width: 100%;
         background-color: $servicesBg;
+        color: white;
+        .innerContainer {
+            .leftSide {
+                width: 49%;
+                display: inline-block;
+                vertical-align: top;
+                .serviceText {
+                    width: 50%;
+                    text-align: left;
+                    padding-left: 50%;
+                    img {
+                        display: block;
+                        clear: both;
+                    }
+                    h5 {
+                        font-size: 1em;
+                        display: block;
+                        padding-top: 5em;
+                        font-family: Montserrat-Regular, sans-serif;
+                    }
+                    .whiteLine {
+                        display: block;
+                        background-color: white;
+                        width: 2em;
+                        height: 0.5em;
+                        margin-top: 2em;
+                        margin-bottom: 2em;
+                    }
+                    p {
+                        display: block;
+                        text-align: left;
+                        font-size: 1.8em;
+                    }
+                }
+            }
+            .rightSide {
+                display: inline-block;
+                width: 49%;
+            }
+        }
     }
     .favourites {
         display: inline-block;
         width: 100%;
+        .innerContainer {
+            position: relative;
+        }
         .favCard {
-            width: 20%;
-            float: left;
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 10%;
+            .imgContainer {
+                margin-bottom: 3em;
+                display: block;
+                img {
+                    margin: 0 auto;
+                }
+            }
+            a {
+                display: block;
+                border: black solid 0.3em;
+                padding: 0.5em;
+                font-family: Montserrat-Bold, sans-serif;
+                font-size: 1em;
+                margin: 0 auto;
+                width: 50%;
+                &:hover {
+                    color: white;
+                    background-color: black;
+                    border: black solid 0.3em;
+                }
+            }
+        }
+        .customerFav {
+            display: inline-block;
+            width: 49%;
+            text-align: left;
+            h5 {
+                font-size: 1.1em;
+                display: block;
+                font-family: Montserrat-Regular, sans-serif;
+            }
+            .blackLine {
+                display: block;
+                background-color: black;
+                width: 2em;
+                height: 0.5em;
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+            h4 {
+                font-size: 1.3em;
+                display: block;
+                font-family: Montserrat-Regular, sans-serif;
+                padding-bottom: 3em;
+            }
+            p {
+                padding-top: 3em;
+                font-size: 1.7em;
+                display: block;
+            }
         }
         .favDesc {
-            width: 60%;
-            float: right;
+            width: 90%;
+            position: absolute;
+            top: 38%;
+            z-index: -1;
+            border-top: solid 1px $grayLine;
+            border-bottom: solid 1px $grayLine;
+            padding: 1em 0em 1em 11em;
         }
     }
 }
